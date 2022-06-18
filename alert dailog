@@ -1,0 +1,13 @@
+// Create the object of AlertDialog Builder class
+AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+
+// Set the message show
+
+builder.setMessage(”Message you want to show");
+
+// Set Alert Title
+builder.setTitle("Alert !");
+
+// Set Cancelable false for when the user clicks on the outside the Dialog Box
+then it will remain show
+builder.setCancelable(false);
