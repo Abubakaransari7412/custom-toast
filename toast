@@ -1,0 +1,10 @@
+LayoutInflater layoutInflater = getLayoutInflater();
+View myLayout=layoutInflater.inflate(R.layout.cust_toast,null);
+ImageView imageView=myLayout.findViewById(R.id.imageViewCustToast);
+imageView.setImageResource(R.drawable.a5);
+TextView myMessage= myLayout.findViewById(R.id.textViewCustToast);
+myMessage.setText("My Custom Toast");
+Toast myToast=new Toast(getApplicationContext());
+myToast.setDuration(Toast.LENGTH_LONG);
+myToast.setView(myLayout);
+myToast.show();
